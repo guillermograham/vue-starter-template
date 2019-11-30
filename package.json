@@ -23,9 +23,7 @@
     "test:e2e": "cross-env VUE_APP_TEST=e2e vue-cli-service test:e2e --headless",
     "test": "run-s test:unit test:e2e",
     "test:ci": "run-s test:unit:ci test:e2e",
-    "new": "cross-env HYGEN_TMPLS=generators hygen new",
-    "docs": "vuepress dev",
-    "docker": "docker-compose exec dev yarn"
+    "new": "cross-env HYGEN_TMPLS=generators hygen new"
   },
   "gitHooks": {
     "pre-commit": "cross-env PRE_COMMIT=true lint-staged"
@@ -65,14 +63,7 @@
     "npm-run-all": "4.1.x",
     "sass": "1.22.x",
     "sass-loader": "8.0.x",
-    "stylelint": "11.0.x",
-    "stylelint-config-css-modules": "1.5.x",
-    "stylelint-config-prettier": "6.0.x",
-    "stylelint-config-recess-order": "2.0.x",
-    "stylelint-config-standard": "19.0.x",
-    "stylelint-scss": "3.11.x",
-    "vue-template-compiler": "2.6.10",
-    "vuepress": "1.1.x"
+    "vue-template-compiler": "2.6.10"
   },
   "resolutions": {
     "@vue/cli-plugin-unit-jest/jest": "24.9.x",
