@@ -1,6 +1,11 @@
 ---
 to: "src/router/views/<%= h.changeCase.kebab(name) %>.vue"
 ---
+<template>
+  <Layout>
+    <%= titleName %>
+  </Layout>
+</template>
 <%
   const fileName = h.changeCase.kebab(name)
   const importName = h.changeCase.pascal(fileName)
@@ -17,11 +22,6 @@ export default {
 }
 </script>
 
-<template>
-  <Layout>
-    <%= titleName %>
-  </Layout>
-</template>
 <%
 
 if (useStyles) { %>
